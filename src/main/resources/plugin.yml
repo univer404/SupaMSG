@@ -1,0 +1,35 @@
+name: SupaMSG
+version: '1.0.0'
+main: com.supernulled.supamsg.SupaMSG
+api-version: '1.21'
+description: Private messaging, replies, player ignores, and message preferences.
+author: SuperNulled
+commands:
+  msg:
+    description: Send a private message.
+    usage: /msg <player> <message>
+    aliases: [message, whisper]
+  tell:
+    description: Send a private message.
+    usage: /tell <player> <message>
+  dm:
+    description: Send a private message.
+    usage: /dm <player> <message>
+  w:
+    description: Send a private message.
+    usage: /w <player> <message>
+  r:
+    description: Reply to your last private conversation.
+    usage: /r <message>
+    aliases: [reply]
+  block:
+    description: Ignore or unignore a player.
+    usage: /block <player>
+    aliases: [ignore, unignore]
+  msgtoggle:
+    description: Toggle incoming private messages.
+    usage: /msgtoggle
+permissions:
+  supamsg.use:
+    description: Allows use of private messaging commands.
+    default: true
